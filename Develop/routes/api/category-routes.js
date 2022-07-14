@@ -48,22 +48,22 @@ router.get('/:id', (req, res) => {
 // TESTING THIS ROUTE
 router.post('/', (req, res) => {
   // create a new category
-  if (req.session) {
+  
   Category.create({
-    category_name: req.body
+    category_name: req.body.category_name
   })
   .then(dbCategoryData => res.json(dbCategoryData))
   .catch(err => {
     console.log(err);
     res.status(400).json(err);
   })
-  }
+  
 });
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
   Category.update({
-    category_name: req.body
+    category_name: req.body.category_name
   },
   {
     where: {
