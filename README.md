@@ -23,21 +23,15 @@ Build a database application for an e-commerce site using MySQL2, Express and Se
 
 ## Installation
 - npm init
-<br>
 - npm install mysql2
-<br>
 - npm install sequelize
-<br>
 - npm install dotenv
 
 ## Usage 
 - run mysql -u root -p
-<br>
-after password prompt:
-<br>
+- after password prompt:
 - source db/schema.sql
 - quit
-<br>
 - npm start
 
 ## Contributing
